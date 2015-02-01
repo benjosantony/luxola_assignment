@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 
+# Rspec
+gem 'rspec-rails', :group => [:development, :test]
 # Heroku Specific
 gem 'rails_12factor', group: :production
 # Use postgresql as the database for Active Record
