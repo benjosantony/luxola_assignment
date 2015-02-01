@@ -1,4 +1,29 @@
-/*
-  Place all the styles related to the matching controller here.
-  They will automatically be included in application.css.
-*/
+.no-padding{
+    padding: 0px !important;
+}
+.side-bar{
+    margin-top: 10px;
+    padding: 10px 10px 300px 40px;
+    overflow-y: scroll;
+    height: 100%
+}
+
+.side-bar-container{
+    width:300px;
+    margin-bottom: 200px;
+    position: fixed;
+    background: #ededed;
+    height: 100%
+}
+
+.content-area{
+    padding-left: 320px;
+    width: 100%;
+    overflow: auto;
+    background: green;
+    float:right;
+}
+
+
+
+

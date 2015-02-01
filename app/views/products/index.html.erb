@@ -1,0 +1,39 @@
+<!--Main container-->
+<div class="wrapper container-fluid no-padding">
+  <!--Side bar-->
+  <div class="side-bar-container">
+    <div class="well" >
+      <p style="font-size: 30px; padding: 10px !important;">Product Listing Application</p>
+      <button type="submit " class="btn btn-success" style="padding: 10px;margin-left:10px;">Add a new Product</button>
+    </div>
+
+    <div class="side-bar">
+      <ul class="media-list">
+        <% (1..50).each do |i| %>
+            <a href="http://google.com">
+            <li class="media">
+              <div class="media-left">
+                <p>
+                  <img class="media-object" src="http://lorempixel.com/50/50/" alt="...">
+                </p>
+
+
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Product <%= i %></h4>
+                S$<%=i*10  %>
+              </div>
+            </li>
+            </a>
+      <% end %>
+
+
+      </ul>
+    </div>
+
+  </div><!--End of side bar-->
+  <div class="content-area"  >
+    Contents
+  </div><!--End of contents-->
+</div><!--End of main container-->
+
