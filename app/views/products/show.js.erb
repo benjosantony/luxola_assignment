@@ -1,8 +1,7 @@
 // Hide the modal
 $('#productModal').modal('hide');
 $('.content-area').html("<%= escape_javascript(render 'show', {product: @product}) %>");
-// TODO reload the  products contents in the background
-<%= %>
+// Reload the list in the background
 $.ajax({
     type: "GET",
     url: '/products.js'
