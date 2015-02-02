@@ -4,7 +4,8 @@ gem 'rails', '4.2.0'
 # Testing Specific
 gem 'rspec-rails', :group => [:development, :test]
 gem 'rspec-collection_matchers' ,:group => [:development, :test]
-
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
 # Heroku Specific
 gem 'rails_12factor', group: :production
 # Use postgresql as the database for Active Record
