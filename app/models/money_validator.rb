@@ -7,7 +7,7 @@ class MoneyValidator < ActiveModel::Validator
           if !(value.is_a? NilClass)
             # if either one of the condition is not met means improper money
             if !(value.is_a?( Numeric)  && decimals(value.to_f()) <=2 && value.to_f() >=0)
-              record.errors[field] << "Money should be of proper format "
+              record.errors[field] << " should be of proper cash value "
             end
           end
        end

@@ -17,12 +17,26 @@
 }
 
 .content-area{
-    padding-left: 320px;
+    padding-left: 300px;
     width: 100%;
     overflow: auto;
-    background: green;
     float:right;
 }
+
+.content-area-heading   {
+    background: rgb(92, 184, 92);
+    margin: 0px;
+    padding: 20px;
+    color: white;
+}
+
+
+.new_button {
+    padding: 10px;
+    margin-left:10px;
+}
+
+
 
 
 

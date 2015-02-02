@@ -4,36 +4,30 @@
   <div class="side-bar-container">
     <div class="well" >
       <p style="font-size: 30px; padding: 10px !important;">Product Listing Application</p>
-      <button type="submit " class="btn btn-success" style="padding: 10px;margin-left:10px;">Add a new Product</button>
+      <%= link_to 'Add a new Product' , new_product_path , {class:'btn btn-success new_button', remote:true}%>
     </div>
-
     <div class="side-bar">
-      <ul class="media-list">
-        <% (1..50).each do |i| %>
-            <a href="http://google.com">
-            <li class="media">
-              <div class="media-left">
-                <p>
-                  <img class="media-object" src="http://lorempixel.com/50/50/" alt="...">
-                </p>
+      <ul class="media-list" id = "productsList">
 
-
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">Product <%= i %></h4>
-                S$<%=i*10  %>
-              </div>
-            </li>
-            </a>
-      <% end %>
-
+        <%= render 'products_list' , {products: @products} %>
 
       </ul>
     </div>
 
   </div><!--End of side bar-->
   <div class="content-area"  >
-    Contents
+
   </div><!--End of contents-->
 </div><!--End of main container-->
+
+
+<!--The Modal-->
+
+<div class="modal fade" id="productModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 

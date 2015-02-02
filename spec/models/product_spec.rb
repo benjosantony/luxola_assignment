@@ -12,7 +12,7 @@ RSpec.describe Product, :type => :model do
     end
 
     context 'When price is not a number' do
-      subject(:product) {Product.new ({price:''})}
+      subject(:product) {Product.new ({price:'asdads'})}
       it {should have_at_least(1).error_on(:price)}
     end
     context 'When price is an integer' do

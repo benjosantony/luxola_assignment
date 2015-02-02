@@ -1,0 +1,19 @@
+<% @products.each do |product| %>
+
+    <%= link_to(product,remote:true) do %>
+        <li class="media">
+          <div class="media-left">
+            <p>
+              <img class="media-object" src="http://products.kerncheh.me/assets/placeholder-333e4a8cc1733dc9b3aa1bc126c0ad33.png" alt="...">
+            </p>
+
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading"><%= product.name %></h4>
+            S$<%=product.price  %>
+          </div>
+        </li>
+
+    <% end %>
+
+<% end %>

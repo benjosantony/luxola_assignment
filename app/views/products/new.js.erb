@@ -1,0 +1,5 @@
+// New item
+<%# Note this is rendering the _new.erb partial %>
+$("#productModal .modal-content").html("<%= escape_javascript(render 'form', {product: @product}) %>");
+$('#productModal .modal-title').html('New Product');
+$('#productModal').modal('show');
