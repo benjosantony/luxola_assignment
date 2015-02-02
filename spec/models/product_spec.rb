@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe Product, :type => :model do
 
   context 'For a product' do
-    subject(:product) {Product.new}
-    context 'Product should be valid' do
+    context 'when its columns are not filled' do
+      subject(:product) {Product.new}
       it {should have(1).error_on(:name)}
       it {should have(1).error_on(:description)}
       it { should have_at_least(1).errors_on(:price) }
